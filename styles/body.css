@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    background-image: url(/assets/Jason_and_Lucia_01_landscape.webp);
+    background-repeat: no-repeat;
+    background-size: 90% 100vh;
+    background-position: -45vh 0vh;
+}
+
+.fundo {
+    display: flex;
+    justify-content: end;
+}
+
+.fundo_preto {
+    position: absolute;
+    background-color: black;
+    height: 100vh;
+    width: 95vh;
+    clip-path: polygon(30% 0%, 100% 0%, 100% 700%, 0% 100%);
+    z-index: -1;
+}
+
+.play_arrow {
+    position: absolute;
+    background-image: url(/assets/play-solid.svg);
+    background-size: 2.5vh;
+    height: 12vh; /* exemplo de aumento */
+    width: 12vh;
+    background-repeat: no-repeat; /* evita repetição */
+    background-position: center;  /* centraliza a imagem */
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    top: 45vh;
+    right: 33vh;
+    transition: .7s;
+}
+
+.play_arrow:hover {
+    height: 12.5vh;
+    width: 12.5vh;
+}
+
+@keyframes buttonAnimation {
+    0%{
+        height: 12vh;
+        width: 12vh;
+    }
+
+    100%{
+        height: 12.7vh;
+        width: 12.7vh;
+    }
+}
