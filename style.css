@@ -18,3 +18,89 @@
     text-decoration: none;
     background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    background-size: cover;
+    background-position: center;
+    height: 4000px;
+  }
+
+  .fundo {
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .geral {
+    flex-direction: column;
+    top: 5vh;
+    left: 5vw;
+  }
+
+  .vi {
+    font-size: 40px;
+    margin: 0 0 2vh 0;
+  }
+
+  .menu {
+    background-size: 40px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .logo_gta {
+    left: 10vw;
+    top: 8vh;
+    width: 40vw;
+    height: 12vh;
+    background-size: contain;
+  }
+
+  .vi_trailer,
+  .vi_trailer2 {
+    font-size: 4vh;
+    top: 80%;
+    left: 30%;
+    -webkit-text-stroke: 1px white;
+  }
+
+  .veja_trailer {
+    top: 85%;
+    left: 30%;
+    font-size: 1.4vh;
+    letter-spacing: 0.3vh;
+  }
+
+  .seta {
+    height: 50px;
+    width: 10vw;
+    top: 90%;
+    left: 45%;
+  }
+
+  .logo_geral {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .logo_gta_animada {
+    background-size: 200%;
+    background-position: center;
+  }
+
+  .logo_gta_fundo {
+    background-size: 30%;
+    margin-top: 5vh;
+    top: 8vh;
+  }
+
+  .data_lançamento {
+    font-size: 6vh;
+    line-height: 8vh;
+    left: 5vw;
+    top: 30vh;
+    letter-spacing: -.3vh;
+  }
+}

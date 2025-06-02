@@ -175,8 +175,35 @@ body {
 }
 
 .logo_geral {
-    
+      position: fixed;
+      top: 0vh; left: 0vw;
+      width: 99.42vw; height: 100vw;
+      background: black;
+      animation: revealFromEdges 3s both;
+      mask-image: radial-gradient(circle, transparent 0%, black 70%);
+      -webkit-mask-image: radial-gradient(circle, transparent 0%, black 70%);
+      mask-composite: exclude;
+      -webkit-mask-composite: destination-out;
+    animation-timeline: view(-10% 280%);
+      z-index: 3;
 }
+
+    @keyframes revealFromEdges {
+      0% {
+        mask-image: radial-gradient(circle, transparent 0%, transparent 100%);
+        -webkit-mask-image: radial-gradient(circle, transparent 0%, transparent 100%);
+      }
+
+      50%{
+        mask-image: radial-gradient(circle, transparent 0%, white 50%);
+        -webkit-mask-image: radial-gradient(circle, transparent 0%, white 50%);
+      }
+
+      100% {
+                mask-image: radial-gradient(circle, transparent 0%, black 0%);
+        -webkit-mask-image: radial-gradient(circle, transparent 0%, black 0%);
+      }
+    }
 
 .logo_gta_animada {
     position: fixed;
@@ -246,10 +273,12 @@ body {
   from {
     opacity: 0;
     background-position: 0% center;
+    scale: 1;
   }
   to {
     opacity: 1;
     background-position: 100% center;
+    scale: .8;
   }
 }
 
@@ -277,4 +306,3 @@ body {
   animation-timeline: view(-100% 170%);
   animation-range: entry 0% cover 100%;
 }
-
